@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 270" width="480" height="270" role="img" aria-hidden="true">
+  <defs>
+    <linearGradient id="bg-d1-reverse-lunge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FDEFF5"/>
+      <stop offset="1" stop-color="#E4DCF8"/>
+    </linearGradient>
+  </defs>
+  <rect width="480" height="270" fill="url(#bg-d1-reverse-lunge)"/>
+  <circle cx="268" cy="78" r="75" fill="#D4C9F2" opacity="0.35"/>
+  <circle cx="294" cy="60" r="10" fill="#FFC6A8" opacity="0.8"/>
+  <circle cx="224" cy="108" r="7" fill="#F4A7C6" opacity="0.7"/>
+  <line x1="48" y1="222" x2="432" y2="222" stroke="#34243B" stroke-width="4" stroke-linecap="round" opacity="0.18"/>
+  <polyline points="258 98 246 162" fill="none" stroke="#34243B" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline points="246 162 238 164 240 216" fill="none" stroke="#34243B" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline points="246 162 276 170 306 206" fill="none" stroke="#34243B" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline points="256 110 300 118" fill="none" stroke="#34243B" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="312" y1="40" x2="312" y2="222" stroke="#B9A6E8" stroke-width="6" stroke-linecap="round" opacity="0.45"/>
+  <circle cx="268" cy="78" r="17" fill="#F4A7C6" stroke="#34243B" stroke-width="7"/>
+  <line x1="70" y1="240" x2="86" y2="240" stroke="#E879A9" stroke-width="5" stroke-linecap="round" opacity="0.6"/>
+  <line x1="384" y1="240" x2="404" y2="240" stroke="#E879A9" stroke-width="5" stroke-linecap="round" opacity="0.6"/>
+</svg>
