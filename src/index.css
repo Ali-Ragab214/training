@@ -1,0 +1,97 @@
+@import 'tailwindcss';
+
+/* ============================================================
+   FitFlow design tokens (Section G.1 of IMPLEMENTATION_PLAN.md)
+   ============================================================ */
+@theme {
+  /* Primary palette */
+  --color-primary: #e879a9;
+  --color-primary-light: #f4a7c6;
+  /* Deep rose — meets 4.5:1 with white text (Section G.11 checklist) */
+  --color-primary-dark: #c13e74;
+  --color-primary-pressed: #a83564;
+  --color-primary-pressed: #a83564;
+  --color-secondary: #b9a6e8;
+  --color-secondary-light: #d4c9f2;
+  --color-accent: #ffc6a8;
+  --color-accent-light: #ffe0cc;
+
+  /* Backgrounds */
+  --color-cream: #fff9fc;
+  --color-cream-deep: #fef6fa;
+  --color-surface: #ffffff;
+
+  /* Text */
+  --color-ink: #34243b;
+  --color-ink-soft: #75657e;
+  --color-ink-muted: #7c6c85;
+
+  /* Semantic */
+  --color-success: #22c55e;
+  --color-success-bg: #f0fdf4;
+  --color-success-dark: #15803d;
+  --color-warning: #f59e0b;
+  --color-error: #b91c1c;
+
+  /* Borders */
+  --color-line: #f3e8ef;
+  --color-line-strong: #e8d5e0;
+
+  /* Typography */
+  --font-sans:
+    'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+
+  /* Shadows */
+  --shadow-soft: 0 1px 2px rgba(52, 36, 59, 0.05);
+  --shadow-card: 0 4px 6px rgba(52, 36, 59, 0.07);
+  --shadow-lifted: 0 10px 15px rgba(52, 36, 59, 0.1);
+}
+
+:root {
+  --safe-area-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+/* Base styles */
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+  background-color: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Visible keyboard focus everywhere */
+:focus-visible {
+  outline: 2px solid var(--color-primary-dark);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Respect reduced motion preference globally */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Utility: progress fill gradient */
+.progress-fill {
+  background-image: linear-gradient(
+    90deg,
+    var(--color-primary),
+    var(--color-secondary)
+  );
+  transition: width 250ms ease;
+}
